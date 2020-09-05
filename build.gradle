@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+group 'ryry-jenkiesbuild'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.testng', name: 'testng', version: '7.3.0'
+Rya}
+
+test{
+    useTestNG(){
+       includeGroups'Three'
+   }
+   testLogging.showStandardStreams = true
+}
+
+
