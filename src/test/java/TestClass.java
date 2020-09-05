@@ -7,7 +7,7 @@ public class TestClass {
         System.out.println("This is the first test");
     }
 
-    @Test(groups = "Three")
+    @Test(groups = "Two")
     public void testTwo(){
         System.out.println("This is the second test");
     }
@@ -15,5 +15,10 @@ public class TestClass {
     @Test(groups = "Three")
     public void thirdTest(){
         System.out.println("This is the third test");
+    }
+
+    @Test(groups = "Three")
+    public void fourthTest(){
+        System.out.println("This is the fourth test");
     }
 }
