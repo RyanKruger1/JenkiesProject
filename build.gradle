@@ -6,19 +6,21 @@ plugins {
 group 'ryry-jenkiesbuild'
 version '1.0'
 
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     compile group: 'org.testng', name: 'testng', version: '7.3.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.5'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.2.0'
+    compile 'com.google.guava:guava:25.+'
 }
 
 test{
-    useTestNG(){
-       includeGroups'Three'
-   }
-   testLogging.showStandardStreams = true
+    useTestNG()
+    testLogging.showStandardStreams = true
 }
 
 

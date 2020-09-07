@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestClass" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-09-05T07:44:41" hostname="Kruger" time="0.007">
+<testsuite name="TestClass" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-09-07T20:54:34" hostname="Kruger" time="0.006">
   <properties/>
-  <testcase name="testTwo" classname="TestClass" time="0.005"/>
+  <testcase name="fourthTest" classname="TestClass" time="0.0"/>
+  <testcase name="testOne" classname="TestClass" time="0.0"/>
+  <testcase name="testTwo" classname="TestClass" time="0.0"/>
   <testcase name="thirdTest" classname="TestClass" time="0.0"/>
-  <system-out><![CDATA[This is the second test
+  <system-out><![CDATA[This is the fourth test
+This is the first test
+This is the second test
 This is the third test
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
