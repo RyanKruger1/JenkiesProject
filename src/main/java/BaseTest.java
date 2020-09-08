@@ -13,12 +13,25 @@ import java.rmi.Remote;
 public class BaseTest {
 
     private RemoteWebDriver driver;
+    private String URL;
+
+    public void setURL(String url){
+        URL = url;
+    }
+
+    public String getURL(){
+         return URL;
+    }
 
     @BeforeTest
      public void startChrome() {
         System.out.println("Starting webdriver now");
         WebDriverManager.chromedriver().setup();
+        PropertiesExtractor ex = new PropertiesExtractor();
+        URL = ex.getProperty("URL");
+        System.out.println("Navigating to " + URL);
         driver = new ChromeDriver();
+        driver.get(URL);
     }
 
     @AfterTest
@@ -28,3 +41,9 @@ public class BaseTest {
          driver.quit();
     }
 }
+//Todo
+//1) Create a way for always navigating to specific website [\/]
+//2) Create a way of easily accessing test data that create
+//3) Create Login for website that should be used.
+//4) Create basic tests
+//5) Learn how the reporting works.
